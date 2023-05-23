@@ -41,7 +41,8 @@ h4 {
 
 #generator-btn {
     background: #10B981;
-   
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border: none;
     border-radius: 6px;
     display: flex;
     flex-direction: row;
@@ -49,7 +50,7 @@ h4 {
     align-items: center;
     padding: 9px 17px 9px 15px;
     gap: 12px;
-    border: none;
+    
     position: absolute;
     width: 191px;
     height: 42px;
@@ -108,4 +109,98 @@ position: absolute;
     position: absolute;
     left: 287px;
     top: 396px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 18px;
+    top: 284px;
+    left: 300px;
+  }
+#switchdown {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 18px;
+    top: 308px;
+    left: 266px;
+}
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    left: 0px;
+    top: 0px;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #059669;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #059669;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(12px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  p {
+    color: #D5D4D8;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  #p-one {
+    position: absolute;
+    left: 345px;
+    top: 266px;
+}
+
+#p-two {
+    position: absolute;
+    left: 345px;
+    top: 290px;
 }
