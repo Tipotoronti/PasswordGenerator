@@ -65,6 +65,12 @@ h4 {
     
 }
 
+#generator-btn:hover {
+    color: #10B981;
+    background-color: #FFFFFF;
+} 
+
+
 hr {
     position: absolute;
     width: 446px;
@@ -98,6 +104,11 @@ position: absolute;
     color: #55F991;
 
 }
+
+.placeholder:hover {
+    background: #064E3B;
+}
+  
 
 #placeholder-one-el {
     position: absolute;
